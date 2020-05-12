@@ -1,0 +1,13 @@
+{
+  "name": "bis-scraper",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jsdom": "^16.2.2"
+  }
+}

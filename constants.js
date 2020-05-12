@@ -1,0 +1,9 @@
+export const BIS_BASE_URL = 'https://www.bis.org'
+export const BIS_INSTITUTIONS_JSON_PATH = '/dcms/api/token_data/institutions.json?list=cbspeeches&theme=cbspeeches'
+export const BIS_SPEECHES_HTML_PATH = '/doclist/cbspeeches.htm'
+export const BIS_SPEECHES_JSON_PATH = '/doclist/cbspeeches.json'
+export const BIS_SPEECH_PATH = '/reviews'
+export const PAGE_SIZE = 25
+export const DATE_FROM = '01/01/2007'
+export const SORT = 'date_desc'
+export const THEME = 'cbspeeches'
