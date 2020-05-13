@@ -111,14 +111,14 @@ const getAllSpeeches = async () => {
   return speeches
 }
 
-(async () => {
-  const speeches = await getAllSpeeches()
-  fs.writeFile('speeches.json', JSON.stringify(speeches), () => console.log('Complete'))
-})()
+// (async () => {
+//   const speeches = []
+//   const institutions = await getInstitutions()
+//   for (const institution of institutions) speeches.push(...(await getSpeechesByInstitution(institution)))
+//   fs.writeFile('speeches.json', JSON.stringify(speeches), () => console.log('Complete'))
+// })()
 
 (async () => {
-  const speeches = []
-  const institutions = await getInstitutions()
-  for (const institution of institutions) speeches.push(...(await getSpeechesByInstitution(institution)))
+  const speeches = await getAllSpeeches()
   fs.writeFile('speeches.json', JSON.stringify(speeches), () => console.log('Complete'))
 })()
