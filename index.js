@@ -74,6 +74,6 @@ const getSpeechesByInstitution = async institution => {
 (async () => {
   const speeches = []
   const institutions = await getInstitutions()
-  for (const institution of institutions) speeches.concat(await getSpeechesByInstitution(institution))
+  for (const institution of institutions) speeches.push(...(await getSpeechesByInstitution(institution)))
   fs.writeFile('speeches.json', JSON.stringify(speeches), () => console.log('Complete'))
 })()
